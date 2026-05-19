@@ -1,66 +1,59 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom right, #0f172a, #312e81);
     color: white;
 }
 
-/* MAIN LAYOUT */
+/* TOP BANNER */
 
-.main-container {
-    display: flex;
-    min-height: 100vh;
-}
-
-/* SIDEBAR */
-
-.sidebar {
-    width: 30%;
-    background: rgba(255, 255, 255, 0.08);
-    padding: 50px;
+.top-banner {
     text-align: center;
-    backdrop-filter: blur(10px);
-}
-
-.sidebar h1 {
-    font-size: 55px;
-    letter-spacing: 8px;
-    color: #f8fafc;
-    font-family: Georgia;
-}
-
-.sidebar p {
-    font-size: 22px;
-    line-height: 1.8;
-    color: #cbd5e1;
-}
-
-/* CONTENT */
-
-.content {
-    width: 70%;
     padding: 40px;
 }
 
-/* CARDS */
+.top-banner h1 {
+    font-size: 65px;
+    letter-spacing: 10px;
+    font-family: Georgia;
+    color: white;
+}
 
-.card {
+.top-banner p {
+    font-size: 22px;
+    color: #cbd5e1;
+}
+
+/* GRID */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* BOXES */
+
+.box {
     background: rgba(255, 255, 255, 0.08);
-    margin-bottom: 30px;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 25px;
     backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     transition: 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.box:hover {
+    transform: scale(1.03);
 }
 
 /* HEADINGS */
 
-h2 {
+.box h2 {
     font-size: 35px;
     color: #c4b5fd;
     font-family: Georgia;
@@ -68,21 +61,27 @@ h2 {
 
 /* TEXT */
 
-p,
-li {
-    font-size: 22px;
-    line-height: 1.8;
+.box p,
+.box li {
+    font-size: 21px;
+    line-height: 1.7;
     color: #e2e8f0;
 }
 
-/* FAVOURITE COLOUR BOX */
+/* COLOUR BOX */
 
 .colour-box {
     width: 250px;
     height: 70px;
     background: linear-gradient(to right, #00ff66, #00cc44);
-    margin: auto;
-    margin-top: 40px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 255, 100, 0.8);
+    border-radius: 18px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 100, 0.7);
+}
+
+/* CONTACT */
+
+.contact-box {
+    grid-column: span 2;
+    text-align: center;
 }
