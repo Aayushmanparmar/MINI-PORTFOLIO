@@ -1,61 +1,104 @@
 body {
-    background: linear-gradient(to right, #dbeafe, #fce7f3);
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #312e81);
+    color: white;
 }
+
+/* HEADER */
 
 .header {
     text-align: center;
-    padding: 40px;
+    padding: 70px 20px;
 }
 
 .header h1 {
     font-family: Georgia;
-    font-size: 60px;
-    color: #1e3a8a;
-    letter-spacing: 10px;
+    font-size: 70px;
+    letter-spacing: 12px;
+    color: #f8fafc;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .header p {
-    font-size: 22px;
-    color: #374151;
+    font-size: 24px;
+    color: #cbd5e1;
+    margin: 10px;
 }
+
+/* MAIN CONTENT BOX */
 
 .content {
     width: 80%;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 30px;
-    border-radius: 20px;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
 }
+
+/* SECTION HEADINGS */
 
 h2 {
     font-family: Georgia;
-    font-size: 35px;
-    color: #7c3aed;
+    font-size: 40px;
+    color: #a78bfa;
+    border-left: 6px solid #8b5cf6;
+    padding-left: 15px;
+    margin-top: 40px;
 }
+
+/* TEXT */
 
 p,
 li {
     font-size: 22px;
-    color: #4b5563;
+    color: #e2e8f0;
     line-height: 1.8;
 }
+
+/* LISTS */
 
 ul {
     list-style-type: square;
 }
 
-.colour-box {
-    width: 220px;
-    height: 60px;
-    background-color: green;
-    border-radius: 12px;
-    border: 2px solid black;
+/* HOVER EFFECT */
+
+li:hover {
+    transform: translateX(8px);
+    transition: 0.3s;
 }
 
+/* FAVOURITE COLOUR BOX */
+
+.colour-box {
+    width: 260px;
+    height: 70px;
+    background: linear-gradient(to right, #00ff66, #00cc44);
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 100, 0.7);
+    border: 2px solid white;
+}
+
+/* LINE */
+
 hr {
-    border: 1px solid #94a3b8;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     width: 90%;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8b5cf6;
+    border-radius: 10px;
 }
